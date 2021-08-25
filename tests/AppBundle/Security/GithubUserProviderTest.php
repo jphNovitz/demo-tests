@@ -86,6 +86,9 @@ class GithubUserProviderTest extends TestCase
         $githubUserProvider->loadUserByUsername('an-access-token');
     }
 
+
+
+
     public function tearDown()
     {
         $this->client = null;
