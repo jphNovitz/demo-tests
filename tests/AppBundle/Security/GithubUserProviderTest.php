@@ -6,6 +6,7 @@ use AppBundle\Entity\User;
 use AppBundle\Security\GithubUserProvider;
 use PHPUnit\Framework\TestCase;
 
+
 class GithubUserProviderTest extends TestCase
 {
     private $client;
@@ -85,10 +86,6 @@ class GithubUserProviderTest extends TestCase
         $githubUserProvider = new GithubUserProvider($this->client, $this->serializer);
         $githubUserProvider->loadUserByUsername('an-access-token');
     }
-
-
-
-
     public function tearDown()
     {
         $this->client = null;
